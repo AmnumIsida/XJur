@@ -1,4 +1,4 @@
-﻿# XAlgiz
+# XAlgiz
 
 API RESTful desenvolvida em ASP.NET Core para cadastro de clientes, serviços e emissão de notas fiscais. Utiliza
 autenticação JWT, FluentValidation para validações, EF Core com banco em memória e está conteinerizada via Docker.
