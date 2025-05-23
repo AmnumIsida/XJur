@@ -1,0 +1,10 @@
+﻿services:
+  xalgiz:
+    image: xalgiz
+    build:
+      context: .
+      dockerfile: XAlgiz/Docker/Dockerfile
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+
