@@ -22,7 +22,7 @@ autenticação JWT, FluentValidation para validações, EF Core com banco em mem
 ### Rodando com Docker
 
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 
 Acesse a documentação Swagger em: [http://localhost:5000/swagger](http://localhost:5000/swagger)
@@ -40,8 +40,8 @@ Faça login via `POST /login` com as credenciais fixas:
 
 ```json
 {
-  "user": "admin",
-  "password": "123456"
+  "user": "******",
+  "password": "******"
 }
 ```
 
@@ -80,7 +80,6 @@ Todos os endpoints (exceto `/login`) requerem autenticação JWT.
 * [ ] Persistência com banco relacional (ex: PostgreSQL)
 * [ ] Implementação de endpoints `GET`, `PUT`, `DELETE` para clientes e serviços
 * [ ] Cadastro e gerenciamento de usuários
-* [ ] Integração com IdentityServer ou ASP.NET Core Identity
 * [ ] Interface web para consumo da API (ex: Blazor, React)
 * [ ] Logging estruturado e monitoramento
 * [ ] Testes automatizados (unitários e integração)
