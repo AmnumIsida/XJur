@@ -33,11 +33,12 @@ public static class NotaFiscalEndpoints
                     {
                         return Results.BadRequest(new[] { "Cliente não encontrado." });
                     }
-                    catch (Exception e)
+                    catch (Exception)
                     {
-                        return Results.Problem(e.Message);
+                        return Results.StatusCode(500);
                     }
-                }).RequireAuthorization()
+                })
+            .RequireAuthorization()
             .WithName("EmitirNotaFiscal")
             .WithTags("Notas Fiscais")
             .Produces<EmitirNotaFiscalResponse>()
