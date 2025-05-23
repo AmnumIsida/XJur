@@ -1,3 +1,3 @@
 ﻿namespace XAlgiz.Dtos;
 
-public record CadastrarServicoRequest(int ClientId, string Descricao, decimal Valor, DateOnly Data);
+public record CadastrarServicoRequest(int ClienteId, string Descricao, decimal Valor, DateOnly Data);
