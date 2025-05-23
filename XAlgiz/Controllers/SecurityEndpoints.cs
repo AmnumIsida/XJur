@@ -16,7 +16,7 @@ public static class SecurityEndpoints
                 var tokenHandler = new JwtSecurityTokenHandler();
                 var tokenDescriptor = new SecurityTokenDescriptor
                 {
-                    Expires = DateTime.UtcNow.AddHours(1),
+                    Expires = DateTime.UtcNow.AddMinutes(15),
                     SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(JwtSettings.Key),
                         SecurityAlgorithms.HmacSha256Signature)
                 };
