@@ -2,6 +2,10 @@
 
 public class Cliente
 {
+    public Cliente()
+    {
+    }
+
     public Cliente(string nome, string cpfCnpj, string email, string telefone)
     {
         Nome = nome;
