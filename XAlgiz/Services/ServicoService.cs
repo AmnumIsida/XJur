@@ -9,7 +9,7 @@ public class ServicoService(AppDbContext context) : BaseService(context)
 {
     public CadastrarServicoResponse CadastrarServico(CadastrarServicoRequest requisicao)
     {
-        var cliente = Context.Clientes.Find(requisicao.ClientId);
+        var cliente = Context.Clientes.Find(requisicao.ClienteId);
         if (cliente == null) throw new ClienteNaoEncontradoException();
 
         var servico = new Servico(cliente.Id, requisicao.Descricao, requisicao.Valor, requisicao.Data);
