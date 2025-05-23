@@ -7,7 +7,7 @@ public class CadastrarServicoRequestValidator : AbstractValidator<CadastrarServi
 {
     public CadastrarServicoRequestValidator()
     {
-        RuleFor(r => r.ClientId)
+        RuleFor(r => r.ClienteId)
             .GreaterThan(0).WithMessage("Id do cliente inválido.");
 
         RuleFor(r => r.Descricao)
