@@ -33,7 +33,7 @@ builder.Services.AddAuthentication(options =>
     {
         options.TokenValidationParameters = new TokenValidationParameters
         {
-            ValidateIssuer = false, // Configure conforme seu cenário
+            ValidateIssuer = false,
             ValidateAudience = false,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
@@ -42,7 +42,6 @@ builder.Services.AddAuthentication(options =>
     });
 
 builder.Services.AddAuthorization();
-
 
 var app = builder.Build();
 
